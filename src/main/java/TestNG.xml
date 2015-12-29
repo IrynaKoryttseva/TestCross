@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ScheduleBusTest" parallel="tests" thread-count="5">
+    <test name="ChromeTest" verbose="1" parallel="true">
+        <parameter name="browserName" value="chrome" />
+        <parameter name="browserVersion" value="" />
+        <classes>
+            <class name="com.grid.shedule.test.TestGoogleSearch" />
+        </classes>
+    </test>
+    <test name="InternetExplorerTest" verbose="1" parallel="true">
+        <parameter name="browserName" value="internet explorer" />
+        <parameter name="browserVersion" value="8" />
+        <classes>
+            <class name="com.grid.shedule.test.TestGoogleSearch" />
+        </classes>
+    </test>
+</suite>
